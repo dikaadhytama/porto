@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    margin: 0;
+    padding-top: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+
+ .jumbotron {
+     width: 100%;
+     height: 41em;
+    background: linear-gradient(#b0c20e3b,rgba(5, 102, 30, 0.74)), url(/assets/images/bg.jpg);
+    background-size: cover;
+    margin-top: 0;
+    /* overflow: auto; */
+    position: relative;
+
+ }
+
+ header .banner {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+ }
+
+ .banner button {
+     width: 180px;
+     padding: 12px;
+     border: 2px solid #2aaf2ad0;
+     border-radius: 50px;
+     font-size: 18px;
+     outline: none;
+     letter-spacing: 1px;
+     cursor: pointer;
+     color: #ffffff;
+     background-color: #2aaf2ad0;
+     animation-name: animateBtn;
+     animation-duration: 1s;
+     animation-delay: 1.5s;
+ }
+
+ .banner button:hover{
+     font-weight: bold;
+ }
+ 
+
+
+ .banner h1{
+     font-size: 80px;
+     color: #ffffff;
+     font-weight: 400;
+     animation-name: moveToLeft;
+     animation-duration: 2s;
+ }
+
+ .banner span {
+     text-transform: uppercase;
+     font-family: 'Permanent Marker', cursive;
+ }
+
+ .banner p {
+     font-size: 40px;
+     color: #ffffff;
+     font-weight: 400;
+     margin-top: -60px;
+     animation-name: moveToRight;
+     animation-duration: 2s;
+ }
+
+ nav {
+     background: #2aaf2ad0;
+     padding: 5px;
+     position: sticky;
+     top: 0;
+ }
+
+ nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+ }
+ nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+ }
+
+ nav a:hover{
+     font-weight: 400;
+     color: #fbff00;
+ }
+
+ main {
+    padding: 0;
+    overflow: auto;
+}
+
+#about h2 {
+    padding: 0;
+    color: #2aaf2ad0;
+    font-size: 30px;
+    text-align: center;
+    float: right;
+    padding-right: 25%;
+    margin-top: 200px;
+    font-weight: bold;
+}
+
+#contact h2 {
+    padding: 0;
+    color: #2aaf2ad0;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    padding-left: 25%;
+    margin-top: 200px;
+    font-weight: bold;
+}
+
+#services h2 {
+    padding: 0;
+    color: #2aaf2ad0;
+    font-size: 30px;
+    text-align: center;
+    float: right;
+    padding-right: 25%;
+    margin-top: 200px;
+    font-weight: bold;
+}
+
+
+#about p {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 250px;
+    color: #20852098;
+    
+}
+
+#contact p {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 250px;
+    color: #20852098;
+    
+}
+#services p {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 250px;
+    color: #20852098;
+    
+}
+
+.profile h2 {
+    padding: 20px;
+    color: #2aaf2ad0;
+    font-size: 30px;
+    text-align: left;
+}
+
+.card {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
+ }
+
+ .featured-image-left{
+    width: 50%;
+    height: 41em;
+    object-fit: cover;
+    float: left;
+ }
+
+ .featured-image-right{
+    width: 50%;
+    height: 41em;
+    object-fit: cover;
+    float: right;
+ }
+
+
+
+ header .profile {
+    text-align: left;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+section {
+    text-align: left;
+    padding: 20px;
+    color: #20852098;
+}
+
+ 
+
+ footer {
+    padding: 20px;
+    color: white;
+    background-color: #2aaf2ad0;
+    text-align: center;
+    font-weight: bold;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+}
+
+#content {
+    float: right;
+    width: 75%;
+ }
+
+ 
+@keyframes moveToLeft{
+    0% {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveToRight{
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animateBtn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ @media screen and (max-width: 1000px){
+     
+    #content,
+    
+     aside {
+         width: 100%;
+         padding: 0;
+     }
+
+ }
+ 

@@ -16,7 +16,7 @@ body {
  .jumbotron {
      width: 100%;
      height: 41em;
-    background: linear-gradient(#b0c20e3b,rgba(5, 102, 30, 0.74)), url(assets/images/bg.jpg);
+    background: linear-gradient(#b0c20e3b,rgba(5, 102, 30, 0.74)), url(https://dikaadhytama.github.io/porto/assets/images/bg.jpg);
     background-size: cover;
     margin-top: 0;
     /* overflow: auto; */
